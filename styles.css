@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.main-wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boards-title {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+
+  font-weight: 900;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 50%;
+
+  animation: textShadow 5000ms infinite alternate;
+}
+
+/* "#e74c3c", "#8e44ad", "#3498db", "#e67e22", "#2ecc71"]; */
+@keyframes textShadow {
+  from {
+    /* text-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff; */
+    text-shadow: 2px 2px 10px rgba(90, 250, 223, 1),
+      -2px -2px 10px rgba(90, 250, 223, 1);
+  }
+  to {
+    text-shadow: 0 0 20px #e74c3c, 1px 1px 20px #8e44ad, 2px 2px 20px #3498db,
+      -1px -1px 20px #e67e22, -2px -2px 20px #2ecc71;
+  }
+}
+.animate-title {
+  text-shadow: 0 0 20px #e74c3c, 1px 1px 20px #8e44ad, 2px 2px 20px #3498db,
+    -1px -1px 20px #e67e22, -2px -2px 20px #2ecc71;
+  animation: glow 200ms linear infinite alternate;
+}
+
+.boards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin-right: 50px;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  background: #1d1d1d;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  background: #1d1d1d;
+  border-radius: 50%;
+  margin: 1px;
+  box-shadow: 0 0 2px #000;
+  transition: 2s ease;
+}
+
+.circle:hover {
+  transition-duration: 0s;
+}
+
+.btn {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 30px;
+  margin-top: 20px;
+  background: transparent;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn:hover {
+  color: rgba(90, 250, 223, 1);
+  border: 1px solid rgba(90, 250, 223, 1);
+}

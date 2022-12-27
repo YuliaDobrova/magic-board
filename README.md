@@ -1,1 +1,1 @@
-# magic-board
+# magic-boards
